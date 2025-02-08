@@ -7,7 +7,7 @@ on:
       - 'feeds.php'
       - 'base.html'
   schedule:
-    - cron: '0 */2 * * *'  # Runs every 2 hours
+    - cron: '0 */24 * * *'  # Runs every 2 hours
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
