@@ -1,114 +1,223 @@
-<!DOCTYPE html>
-<html data-theme="dark">
-<head>
-    <title>Focus Feeds</title>
-    <link rel="shortcut icon" href="icon.svg">
-    <link rel="icon" href="icon.svg">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+<!DOCTYPE html><html><head>
+    <title>rssTea - RSS Reader Web App Hosted On Github</title>
+    <meta name="description" content="rssTea is a fast, lightweight RSS and podcast Web Viewer that can be hosted On Github Pages."/>
+    <link rel="shortcut icon" href="favicon.ico"> 
+  <link rel="icon" href="favicon.png">
+<link rel="manifest" href="manifest.json" />
+ <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="rdx" />
+    <meta   name="apple-mobile-web-app-status-bar-style" content="default" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="theme.css" type="text/css">
 </head>
-<body class="min-h-screen bg-base-100">
-    
-    <div class="navbar bg-base-200 justify-between">
-        <div class="text-xl font-bold">F_F</div>
-        <div class="flex gap-4 items-center">
-            <div class="tabs tabs-boxed">
-                <span class="tab tab-active">All</span>
-                <span class="tab">Posts</span>
-                <span class="tab">Podcasts</span>
-            </div>
-            <select class="select select-bordered w-48">
-                <option value="All">All Channels</option>
-                <option value="Neowin">Neowin</option>
-                <option value="India news from ESPN Cricinfo.com">India news from ESPN Cricinfo.com</option>
-            </select>
-        </div>
-    </div>
+<body>
+<div id="header">rssTea</div>
+    <div id="pcwrap">
+<div id="filter"><div class="pclogo">rssTea</div><span id="filters">
+<span class="tab active">All</span>
+<span class="tab">Posts</span>
+<span class="tab">Podcasts</span>
+<select name="changechannel"><option value="All">All Channels</option><option value="Neowin">Neowin</option><option value="India news from ESPN Cricinfo.com">India news from ESPN Cricinfo.com</option><option value="RTGame Stream Archive">RTGame Stream Archive</option><option value="TLDR News Global">TLDR News Global</option><option value="The Daily Briefing">The Daily Briefing</option><option value="Waveform: The MKBHD Podcast">Waveform: The MKBHD Podcast</option><option value="DougDougDougDoug">DougDougDougDoug</option></select></span></div>
+<div id="wrap">
+<div class="post" data-channel="Neowin" data-ts="1739037601" data-audio="0"><div class="leftpan"><img src="https://cdn.neowin.com/news/images/uploaded/2025/01/1737456960_product_xxxxx_product_shots1_story.jpg" alt="Save a third on a 3-Pack KeySmart SmartCard - Works with Apple Find"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">Neowin</span> &bull; <span class="date">Feb 08, 2025</span></div>
+<h2><a href="https://www.neowin.net/deals/save-a-third-on-a-3-pack-keysmart-smartcard---works-with-apple-find/" target="_blank">Save a third on a 3-Pack KeySmart SmartCard - Works with Apple Find</a></h2>
+</div></div>
+<div class="post" data-channel="India news from ESPN Cricinfo.com" data-ts="1739025942" data-audio="0"><div class="leftpan"><img src="https://i.imgci.com/espncricinfo/espncinew.png" alt="Who will make way for Kohli as India target series win?"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">India news from ESPN Cricinfo.com</span> &bull; <span class="date">Feb 08, 2025</span></div>
+<h2><a href="https://www.espncricinfo.com/ci/content/story/1472468.html?ex_cid=OTC-RSS" target="_blank">Who will make way for Kohli as India target series win?</a></h2>
+</div></div>
+<div class="post" data-channel="Neowin" data-ts="1739023202" data-audio="0"><div class="leftpan"><img src="https://cdn.neowin.com/news/images/uploaded/2025/02/1738766038_20250205_150702_story.jpg" alt="GEEKOM A6 Mini PC review: better memory, more storage, still affordable at under $429"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">Neowin</span> &bull; <span class="date">Feb 08, 2025</span></div>
+<h2><a href="https://www.neowin.net/reviews/geekom-a6-mini-pc-review-better-memory-more-storage-still-affordable-at-under-429/" target="_blank">GEEKOM A6 Mini PC review: better memory, more storage, still affordable at under $429</a></h2>
+</div></div>
+<div class="post" data-channel="India news from ESPN Cricinfo.com" data-ts="1739022984" data-audio="0"><div class="leftpan"><img src="https://i.imgci.com/espncricinfo/espncinew.png" alt="Virat Kohli fit to play second ODI against England"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">India news from ESPN Cricinfo.com</span> &bull; <span class="date">Feb 08, 2025</span></div>
+<h2><a href="https://www.espncricinfo.com/ci/content/story/1472459.html?ex_cid=OTC-RSS" target="_blank">Virat Kohli fit to play second ODI against England</a></h2>
+</div></div>
+<div class="post" data-channel="Neowin" data-ts="1739021881" data-audio="0"><div class="leftpan"><img src="https://cdn.neowin.com/news/images/uploaded/2021/02/1614091687_ps_logo_story.jpg" alt="PlayStation Network has been down for over 12 hours, and Sony isn't saying much"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">Neowin</span> &bull; <span class="date">Feb 08, 2025</span></div>
+<h2><a href="https://www.neowin.net/news/playstation-network-has-been-down-for-over-12-hours-and-sony-isnt-saying-much/" target="_blank">PlayStation Network has been down for over 12 hours, and Sony isn't saying much</a></h2>
+</div></div>
+<div class="post" data-channel="Neowin" data-ts="1739020801" data-audio="0"><div class="leftpan"><img src="https://cdn.neowin.com/news/images/uploaded/2025/02/1739016652_img_3651_story.jpg" alt="Philips Sleep Headphones review: interesting idea, but nope"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">Neowin</span> &bull; <span class="date">Feb 08, 2025</span></div>
+<h2><a href="https://www.neowin.net/reviews/philips-sleep-headphones-review-interesting-idea-but-nope/" target="_blank">Philips Sleep Headphones review: interesting idea, but nope</a></h2>
+</div></div>
+<div class="post" data-channel="RTGame Stream Archive" data-ts="1739016020" data-audio="0"><div class="leftpan"><img src="https://i2.ytimg.com/vi/IcS09PDN0so/hqdefault.jpg" alt="RTGame Streams: SWORN ft. Northernlion & Sips"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">RTGame Stream Archive</span> &bull; <span class="date">Feb 08, 2025</span></div>
+<h2><a href="https://www.youtube.com/watch?v=IcS09PDN0so" target="_blank">RTGame Streams: SWORN ft. Northernlion & Sips</a></h2>
+</div></div>
+<div class="post" data-channel="TLDR News Global" data-ts="1739010626" data-audio="0"><div class="leftpan"><img src="https://i4.ytimg.com/vi/_ADruSxLVf4/hqdefault.jpg" alt="Is Elon Musk Taking Over the US Government?"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">TLDR News Global</span> &bull; <span class="date">Feb 08, 2025</span></div>
+<h2><a href="https://www.youtube.com/watch?v=_ADruSxLVf4" target="_blank">Is Elon Musk Taking Over the US Government?</a></h2>
+</div></div>
+<div class="post" data-channel="The Daily Briefing" data-ts="1738945333" data-audio="1"><div class="leftpan"><img src="https://content.production.cdn.art19.com/images/e0/b0/38/99/e0b03899-1d1b-4d20-b291-b97866e50de6/b23803de2233f1cb8ea7ac3e2c2c060af1cfcde19e5ece47009afb5afa13124c905aac8035d01e1753e355a053c541f5e1e4e46db4cf2316df8d5f228bcd8f43.jpeg" alt="Why Tesla's European Sales are Plummeting"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">The Daily Briefing</span> &bull; <span class="date">Feb 07, 2025</span></div>
+<h2><a href="" target="_blank">Why Tesla's European Sales are Plummeting</a></h2><div class="audio">
+<button data-aid="0">Play</button>
+<audio src="https://rss.art19.com/episodes/7317a96d-5f15-4789-a8e2-d5056f36998d.mp3?rss_browser=BAhJIgtDaHJvbWUGOgZFVA%3D%3D--d05363d83ce333c74f32188013892b2863ad051c" preload="metadata" aid="0"  controls></audio></div>
+</div></div>
+<div class="post" data-channel="India news from ESPN Cricinfo.com" data-ts="1738937278" data-audio="0"><div class="leftpan"><img src="https://i.imgci.com/espncricinfo/espncinew.png" alt="Ranji Trophy quarter-finals - teams in the fray, players to watch, and much more"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">India news from ESPN Cricinfo.com</span> &bull; <span class="date">Feb 07, 2025</span></div>
+<h2><a href="https://www.espncricinfo.com/ci/content/story/1472355.html?ex_cid=OTC-RSS" target="_blank">Ranji Trophy quarter-finals - teams in the fray, players to watch, and much more</a></h2>
+</div></div>
+<div class="post" data-channel="India news from ESPN Cricinfo.com" data-ts="1738935639" data-audio="0"><div class="leftpan"><img src="https://i.imgci.com/espncricinfo/espncinew.png" alt="Iyer cuts movie night short after late selection call: 'Went off to sleep straightaway'"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">India news from ESPN Cricinfo.com</span> &bull; <span class="date">Feb 07, 2025</span></div>
+<h2><a href="https://www.espncricinfo.com/ci/content/story/1472259.html?ex_cid=OTC-RSS" target="_blank">Iyer cuts movie night short after late selection call: 'Went off to sleep straightaway'</a></h2>
+</div></div>
+<div class="post" data-channel="Neowin" data-ts="1738928761" data-audio="0"><div class="leftpan"><img src="https://cdn.neowin.com/news/images/uploaded/2021/11/1637569306_amd_ryzen_5000_lineup_story.jpg" alt="AMD makes it hard to ignore 8-core Ryzen 5800XT & 5700 if you want an AM4 CPU upgrade"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">Neowin</span> &bull; <span class="date">Feb 07, 2025</span></div>
+<h2><a href="https://www.neowin.net/deals/amd-makes-it-hard-to-ignore-8-core-ryzen-5800xt--5700-if-you-want-an-am4-cpu-upgrade/" target="_blank">AMD makes it hard to ignore 8-core Ryzen 5800XT & 5700 if you want an AM4 CPU upgrade</a></h2>
+</div></div>
+<div class="post" data-channel="TLDR News Global" data-ts="1738922448" data-audio="0"><div class="leftpan"><img src="https://i2.ytimg.com/vi/itkNeH4JKSU/hqdefault.jpg" alt="Can Syria’s New Government Rebuild the Country?"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">TLDR News Global</span> &bull; <span class="date">Feb 07, 2025</span></div>
+<h2><a href="https://www.youtube.com/watch?v=itkNeH4JKSU" target="_blank">Can Syria’s New Government Rebuild the Country?</a></h2>
+</div></div>
+<div class="post" data-channel="Waveform: The MKBHD Podcast" data-ts="1738918800" data-audio="1"><div class="leftpan"><img src="https://megaphone.imgix.net/podcasts/ae6237e6-7e71-11e9-9c4d-3b02b0eab47c/image/21_VMPN_011_Waveform_Social_3000x3000.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress" alt="Would You Watch YouTube at 4x Speed?"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">Waveform: The MKBHD Podcast</span> &bull; <span class="date">Feb 07, 2025</span></div>
+<h2><a href="" target="_blank">Would You Watch YouTube at 4x Speed?</a></h2><div class="audio">
+<button data-aid="1">Play</button>
+<audio src="https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/chrt.fm/track/524GE/traffic.megaphone.fm/VMP9249331456.mp3?updated=1738940461" preload="metadata" aid="1"  controls></audio></div>
+</div></div>
+<div class="post" data-channel="India news from ESPN Cricinfo.com" data-ts="1738910936" data-audio="0"><div class="leftpan"><img src="https://i.imgci.com/espncricinfo/espncinew.png" alt="Champions Trophy 2025 FAQs: Who are playing, what are the venues, where to watch and more"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">India news from ESPN Cricinfo.com</span> &bull; <span class="date">Feb 07, 2025</span></div>
+<h2><a href="https://www.espncricinfo.com/ci/content/story/1472008.html?ex_cid=OTC-RSS" target="_blank">Champions Trophy 2025 FAQs: Who are playing, what are the venues, where to watch and more</a></h2>
+</div></div>
+<div class="post" data-channel="The Daily Briefing" data-ts="1738858288" data-audio="1"><div class="leftpan"><img src="https://content.production.cdn.art19.com/images/e0/b0/38/99/e0b03899-1d1b-4d20-b291-b97866e50de6/b23803de2233f1cb8ea7ac3e2c2c060af1cfcde19e5ece47009afb5afa13124c905aac8035d01e1753e355a053c541f5e1e4e46db4cf2316df8d5f228bcd8f43.jpeg" alt="Why Milei Wants Argentina to Quit the WHO"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">The Daily Briefing</span> &bull; <span class="date">Feb 06, 2025</span></div>
+<h2><a href="" target="_blank">Why Milei Wants Argentina to Quit the WHO</a></h2><div class="audio">
+<button data-aid="2">Play</button>
+<audio src="https://rss.art19.com/episodes/8bd425e8-4328-4855-9adc-ce59ed30b84b.mp3?rss_browser=BAhJIgtDaHJvbWUGOgZFVA%3D%3D--d05363d83ce333c74f32188013892b2863ad051c" preload="metadata" aid="2"  controls></audio></div>
+</div></div>
+<div class="post" data-channel="TLDR News Global" data-ts="1738846856" data-audio="0"><div class="leftpan"><img src="https://i2.ytimg.com/vi/i_Cj8F3Fbh0/hqdefault.jpg" alt="How Trump gave Xi a win this week"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">TLDR News Global</span> &bull; <span class="date">Feb 06, 2025</span></div>
+<h2><a href="https://www.youtube.com/watch?v=i_Cj8F3Fbh0" target="_blank">How Trump gave Xi a win this week</a></h2>
+</div></div>
+<div class="post" data-channel="RTGame Stream Archive" data-ts="1738843261" data-audio="0"><div class="leftpan"><img src="https://i3.ytimg.com/vi/fz3TtJrmqU4/hqdefault.jpg" alt="RTGame Streams: Super Mario Party Jamboree [5] ft. RinPenrose, cakejumper & Mscupcakes"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">RTGame Stream Archive</span> &bull; <span class="date">Feb 06, 2025</span></div>
+<h2><a href="https://www.youtube.com/watch?v=fz3TtJrmqU4" target="_blank">RTGame Streams: Super Mario Party Jamboree [5] ft. RinPenrose, cakejumper & Mscupcakes</a></h2>
+</div></div>
+<div class="post" data-channel="TLDR News Global" data-ts="1738837801" data-audio="0"><div class="leftpan"><img src="https://i2.ytimg.com/vi/aTBh2JdGtcM/hqdefault.jpg" alt="Will Another Great War of Africa Break Out?"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">TLDR News Global</span> &bull; <span class="date">Feb 06, 2025</span></div>
+<h2><a href="https://www.youtube.com/watch?v=aTBh2JdGtcM" target="_blank">Will Another Great War of Africa Break Out?</a></h2>
+</div></div>
+<div class="post" data-channel="The Daily Briefing" data-ts="1738770987" data-audio="1"><div class="leftpan"><img src="https://content.production.cdn.art19.com/images/e0/b0/38/99/e0b03899-1d1b-4d20-b291-b97866e50de6/b23803de2233f1cb8ea7ac3e2c2c060af1cfcde19e5ece47009afb5afa13124c905aac8035d01e1753e355a053c541f5e1e4e46db4cf2316df8d5f228bcd8f43.jpeg" alt="Trump's Plan for the US to "Take Over" the Gaza Strip"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">The Daily Briefing</span> &bull; <span class="date">Feb 05, 2025</span></div>
+<h2><a href="" target="_blank">Trump's Plan for the US to "Take Over" the Gaza Strip</a></h2><div class="audio">
+<button data-aid="3">Play</button>
+<audio src="https://rss.art19.com/episodes/c6639259-3e2f-4462-9463-80024b69870a.mp3?rss_browser=BAhJIgtDaHJvbWUGOgZFVA%3D%3D--d05363d83ce333c74f32188013892b2863ad051c" preload="metadata" aid="3"  controls></audio></div>
+</div></div>
+<div class="post" data-channel="TLDR News Global" data-ts="1738760451" data-audio="0"><div class="leftpan"><img src="https://i3.ytimg.com/vi/blgzFOACz3Y/hqdefault.jpg" alt="Why things are looking up for Netanyahu"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">TLDR News Global</span> &bull; <span class="date">Feb 05, 2025</span></div>
+<h2><a href="https://www.youtube.com/watch?v=blgzFOACz3Y" target="_blank">Why things are looking up for Netanyahu</a></h2>
+</div></div>
+<div class="post" data-channel="The Daily Briefing" data-ts="1738689073" data-audio="1"><div class="leftpan"><img src="https://content.production.cdn.art19.com/images/e0/b0/38/99/e0b03899-1d1b-4d20-b291-b97866e50de6/b23803de2233f1cb8ea7ac3e2c2c060af1cfcde19e5ece47009afb5afa13124c905aac8035d01e1753e355a053c541f5e1e4e46db4cf2316df8d5f228bcd8f43.jpeg" alt="Why Trump & Musk Want to Cut Funding to South Africa"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">The Daily Briefing</span> &bull; <span class="date">Feb 04, 2025</span></div>
+<h2><a href="" target="_blank">Why Trump & Musk Want to Cut Funding to South Africa</a></h2><div class="audio">
+<button data-aid="4">Play</button>
+<audio src="https://rss.art19.com/episodes/a98d46de-8625-4f07-8658-c3c4890aa976.mp3?rss_browser=BAhJIgtDaHJvbWUGOgZFVA%3D%3D--d05363d83ce333c74f32188013892b2863ad051c" preload="metadata" aid="4"  controls></audio></div>
+</div></div>
+<div class="post" data-channel="The Daily Briefing" data-ts="1738596914" data-audio="1"><div class="leftpan"><img src="https://content.production.cdn.art19.com/images/e0/b0/38/99/e0b03899-1d1b-4d20-b291-b97866e50de6/b23803de2233f1cb8ea7ac3e2c2c060af1cfcde19e5ece47009afb5afa13124c905aac8035d01e1753e355a053c541f5e1e4e46db4cf2316df8d5f228bcd8f43.jpeg" alt="Will Trump Extend Tariffs to the UK & EU?"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">The Daily Briefing</span> &bull; <span class="date">Feb 03, 2025</span></div>
+<h2><a href="" target="_blank">Will Trump Extend Tariffs to the UK & EU?</a></h2><div class="audio">
+<button data-aid="5">Play</button>
+<audio src="https://rss.art19.com/episodes/004cff3d-b745-48e5-8930-359580756160.mp3?rss_browser=BAhJIgtDaHJvbWUGOgZFVA%3D%3D--d05363d83ce333c74f32188013892b2863ad051c" preload="metadata" aid="5"  controls></audio></div>
+</div></div>
+<div class="post" data-channel="RTGame Stream Archive" data-ts="1738584056" data-audio="0"><div class="leftpan"><img src="https://i3.ytimg.com/vi/nRLarU86PmU/hqdefault.jpg" alt="RTGame Streams: Cat Detective Albert Wilde"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">RTGame Stream Archive</span> &bull; <span class="date">Feb 03, 2025</span></div>
+<h2><a href="https://www.youtube.com/watch?v=nRLarU86PmU" target="_blank">RTGame Streams: Cat Detective Albert Wilde</a></h2>
+</div></div>
+<div class="post" data-channel="RTGame Stream Archive" data-ts="1738411220" data-audio="0"><div class="leftpan"><img src="https://i1.ytimg.com/vi/Hw3hc5tYF4M/hqdefault.jpg" alt="RTGame Streams: Balatro [10]"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">RTGame Stream Archive</span> &bull; <span class="date">Feb 01, 2025</span></div>
+<h2><a href="https://www.youtube.com/watch?v=Hw3hc5tYF4M" target="_blank">RTGame Streams: Balatro [10]</a></h2>
+</div></div>
+<div class="post" data-channel="Waveform: The MKBHD Podcast" data-ts="1738314000" data-audio="1"><div class="leftpan"><img src="https://megaphone.imgix.net/podcasts/ae6237e6-7e71-11e9-9c4d-3b02b0eab47c/image/21_VMPN_011_Waveform_Social_3000x3000.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress" alt="Did DeepSeek Just Break the AI industry?"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">Waveform: The MKBHD Podcast</span> &bull; <span class="date">Jan 31, 2025</span></div>
+<h2><a href="https://linktr.ee/mkbhd" target="_blank">Did DeepSeek Just Break the AI industry?</a></h2><div class="audio">
+<button data-aid="6">Play</button>
+<audio src="https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/chrt.fm/track/524GE/traffic.megaphone.fm/VMP6169613010.mp3?updated=1738326476" preload="metadata" aid="6"  controls></audio></div>
+</div></div>
+<div class="post" data-channel="DougDougDougDoug" data-ts="1738185773" data-audio="0"><div class="leftpan"><img src="https://i3.ytimg.com/vi/NuCw6PfEEHk/hqdefault.jpg" alt="DougDoug Face Reveal. Then streaming until I beat this god damn game (VOD)"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">DougDougDougDoug</span> &bull; <span class="date">Jan 29, 2025</span></div>
+<h2><a href="https://www.youtube.com/watch?v=NuCw6PfEEHk" target="_blank">DougDoug Face Reveal. Then streaming until I beat this god damn game (VOD)</a></h2>
+</div></div>
+<div class="post" data-channel="Waveform: The MKBHD Podcast" data-ts="1738166400" data-audio="1"><div class="leftpan"><img src="https://megaphone.imgix.net/podcasts/ae6237e6-7e71-11e9-9c4d-3b02b0eab47c/image/21_VMPN_011_Waveform_Social_3000x3000.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress" alt="Apple Vision Pro Turns One: Spatial Reality Check"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">Waveform: The MKBHD Podcast</span> &bull; <span class="date">Jan 29, 2025</span></div>
+<h2><a href="https://linktr.ee/mkbhd" target="_blank">Apple Vision Pro Turns One: Spatial Reality Check</a></h2><div class="audio">
+<button data-aid="7">Play</button>
+<audio src="https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/chrt.fm/track/524GE/traffic.megaphone.fm/VMP6346729085.mp3?updated=1738168864" preload="metadata" aid="7"  controls></audio></div>
+</div></div>
+<div class="post" data-channel="RTGame Stream Archive" data-ts="1737979251" data-audio="0"><div class="leftpan"><img src="https://i1.ytimg.com/vi/dJVHFEmsfQA/hqdefault.jpg" alt="RTGame Streams: WWMII 2025 + Murdering a Chatter"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">RTGame Stream Archive</span> &bull; <span class="date">Jan 27, 2025</span></div>
+<h2><a href="https://www.youtube.com/watch?v=dJVHFEmsfQA" target="_blank">RTGame Streams: WWMII 2025 + Murdering a Chatter</a></h2>
+</div></div>
+<div class="post" data-channel="DougDougDougDoug" data-ts="1737838876" data-audio="0"><div class="leftpan"><img src="https://i1.ytimg.com/vi/pKTvsMogB2c/hqdefault.jpg" alt="The 17th Annual Dougies Awards (Best of 2024) (VOD)"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">DougDougDougDoug</span> &bull; <span class="date">Jan 25, 2025</span></div>
+<h2><a href="https://www.youtube.com/watch?v=pKTvsMogB2c" target="_blank">The 17th Annual Dougies Awards (Best of 2024) (VOD)</a></h2>
+</div></div>
+<div class="post" data-channel="Waveform: The MKBHD Podcast" data-ts="1737709200" data-audio="1"><div class="leftpan"><img src="https://megaphone.imgix.net/podcasts/ae6237e6-7e71-11e9-9c4d-3b02b0eab47c/image/21_VMPN_011_Waveform_Social_3000x3000.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress" alt="Is Anything “New” with the Galaxy S25?"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">Waveform: The MKBHD Podcast</span> &bull; <span class="date">Jan 24, 2025</span></div>
+<h2><a href="https://linktr.ee/mkbhd" target="_blank">Is Anything “New” with the Galaxy S25?</a></h2><div class="audio">
+<button data-aid="8">Play</button>
+<audio src="https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/chrt.fm/track/524GE/traffic.megaphone.fm/VMP9691654749.mp3?updated=1738608597" preload="metadata" aid="8"  controls></audio></div>
+</div></div>
+<div class="post" data-channel="DougDougDougDoug" data-ts="1737576026" data-audio="0"><div class="leftpan"><img src="https://i4.ytimg.com/vi/oNOnLcWc8Xk/hqdefault.jpg" alt="$10,000 Stock Draft vs Ludwig, Atrioc, Stanz, Aiden (VOD)"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">DougDougDougDoug</span> &bull; <span class="date">Jan 22, 2025</span></div>
+<h2><a href="https://www.youtube.com/watch?v=oNOnLcWc8Xk" target="_blank">$10,000 Stock Draft vs Ludwig, Atrioc, Stanz, Aiden (VOD)</a></h2>
+</div></div>
+<div class="post" data-channel="DougDougDougDoug" data-ts="1737493241" data-audio="0"><div class="leftpan"><img src="https://i4.ytimg.com/vi/o3BefoPBNdo/hqdefault.jpg" alt="I am featured in this 2D Platformer. Now I will beat it. (VOD)"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">DougDougDougDoug</span> &bull; <span class="date">Jan 21, 2025</span></div>
+<h2><a href="https://www.youtube.com/watch?v=o3BefoPBNdo" target="_blank">I am featured in this 2D Platformer. Now I will beat it. (VOD)</a></h2>
+</div></div>
+<div class="post" data-channel="DougDougDougDoug" data-ts="1737309630" data-audio="0"><div class="leftpan"><img src="https://i3.ytimg.com/vi/VuItwRHUSsE/hqdefault.jpg" alt="Can Twitch Chat spam "Pogchamp" EXACTLY 250 times (VOD)"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">DougDougDougDoug</span> &bull; <span class="date">Jan 19, 2025</span></div>
+<h2><a href="https://www.youtube.com/watch?v=VuItwRHUSsE" target="_blank">Can Twitch Chat spam "Pogchamp" EXACTLY 250 times (VOD)</a></h2>
+</div></div>
+<div class="post" data-channel="Waveform: The MKBHD Podcast" data-ts="1737104400" data-audio="1"><div class="leftpan"><img src="https://megaphone.imgix.net/podcasts/ae6237e6-7e71-11e9-9c4d-3b02b0eab47c/image/21_VMPN_011_Waveform_Social_3000x3000.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress" alt="TikTok, on the Clock ⏰"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">Waveform: The MKBHD Podcast</span> &bull; <span class="date">Jan 17, 2025</span></div>
+<h2><a href="" target="_blank">TikTok, on the Clock ⏰</a></h2><div class="audio">
+<button data-aid="9">Play</button>
+<audio src="https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/chrt.fm/track/524GE/traffic.megaphone.fm/VMP9207335860.mp3?updated=1737126545" preload="metadata" aid="9"  controls></audio></div>
+</div></div>
 
-    <div class="container mx-auto p-4">
-        <div class="space-y-4">
-            <!-- Post Template -->
-            <div class="card card-side bg-base-200 shadow-xl" data-channel="Neowin" data-ts="1739007961" data-audio="0">
-                <figure class="w-1/4">
-                    <img src="https://cdn.neowin.com/news/images/uploaded/2023/04/1680376425_sandisk_story.jpg" 
-                         alt="SanDisk 8TB" class="object-cover h-full"/>
-                </figure>
-                <div class="card-body">
-                    <div class="text-sm opacity-70">
-                        <span class="channel">Neowin</span> • <span class="date">Feb 08, 2025</span>
-                    </div>
-                    <h2 class="card-title">
-                        <a href="https://www.neowin.net/deals/sandisk-8tb-crucial-4tb-portable-external-ssds-for-windowsmac-are-at-lowest-prices/" 
-                           target="_blank" class="hover:text-primary">
-                            SanDisk 8TB, Crucial 4TB portable external SSDs for Windows/Mac are at lowest prices
-                        </a>
-                    </h2>
-                </div>
-            </div>
-            <!-- More posts would follow the same pattern -->
-        </div>
+</div>
     </div>
-
-    <!-- Floating Player -->
-    <div id="floating_player" class="fixed bottom-0 left-0 right-0 bg-base-300 transform translate-y-full transition-transform duration-300">
-        <div class="container mx-auto p-4">
-            <div class="flex items-center gap-4">
-                <button id="playpausebutton" class="btn btn-primary">Play</button>
-                <span id="title" class="text-lg">Not Playing</span>
-                <button id="speed" class="btn btn-ghost">1x</button>
-                <button id="plus30" class="btn btn-ghost">+30s</button>
-            </div>
-            <div class="mt-4 flex items-center gap-4">
-                <span id="current_time" class="text-sm">00:00</span>
-                <input type="range" id="seekbar" min="0" max="100" step="0.1" 
-                       class="range range-primary flex-grow">
-                <span id="duration" class="text-sm">00:00</span>
-            </div>
-            <ul id="chapters" class="mt-2"></ul>
-        </div>
-    </div>
+<div id="floating_player">
+<div class="player_meta"><button id="playpausebutton">Play</button><span id="title">Not Playing</span> <button id="speed">1x</button><button id="plus30">+30s</button></div>
+  <div id="timeline_wrap">
+  <ul id="chapters"></ul>
+    <span id="current_time"></span>
+    <span id="timeline">
+<input type="range" id="seekbar" min="0" max="100" step="0.1">
+</span>
+    <span id="duration"></span>
+  </div>
+</div>
 
 <script>
-// JavaScript remains largely the same, just updating class names for DaisyUI
 const tabs = document.querySelectorAll('.tab');
-const posts = document.querySelectorAll('.card');
-const select = document.querySelector('select');
+const posts = document.querySelectorAll('.post');
+const select = document.querySelector('select[name="changechannel"]');
 let selectedChannel = 'All';
 
-select.addEventListener('change', () => {
+select.addEventListener('change', () =>
+{
     selectedChannel = select.value;
-    posts.forEach(post => {
+    posts.forEach(post =>
+    {
         const channel = post.getAttribute('data-channel');
-        if (selectedChannel === 'All' || channel === selectedChannel) {
-            post.classList.remove('hidden');
-        } else {
-            post.classList.add('hidden');
+        if (selectedChannel === 'All' || channel === selectedChannel)
+        {
+            post.style.display = 'block';
+        }
+        else
+        {
+            post.style.display = 'none';
         }
     });
-    tabs.forEach(tab => {
-        tab.classList.remove('tab-active');
+    tabs.forEach(tab =>
+    {
+        tab.classList.remove('active');
+        select.classList.add('selected');
     });
-    select.classList.add('selected');
+
 });
 
-tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('tab-active'));
-        tab.classList.add('tab-active');
+tabs.forEach(tab =>
+{
+    tab.addEventListener('click', () =>
+    {
+        tabs.forEach(tab =>
+        {
+            tab.classList.remove('active');
+        });
+        tab.classList.add('active');
         const filter = tab.textContent.trim();
-        posts.forEach(post => {
+        posts.forEach(post =>
+        {
             const audio = parseInt(post.getAttribute('data-audio'));
-            if (filter === 'All' || (filter === 'Posts' && audio === 0) || 
-                (filter === 'Podcasts' && audio === 1)) {
-                post.classList.remove('hidden');
-            } else {
-                post.classList.add('hidden');
+            const channel = post.getAttribute('data-channel');
+            if (filter === 'All' || (filter === 'Posts' && audio === 0) || (filter === 'Podcasts' && audio === 1))
+            {
+                post.style.display = 'block';
+            }
+            else
+            {
+                post.style.display = 'none';
             }
         });
+
         select.value = 'All';
         select.classList.remove('selected');
     });
 });
+
 
 document.addEventListener('DOMContentLoaded', function ()
 {
@@ -398,7 +507,7 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 const iconImage = new Image();
-iconImage.src = 'stream';
+iconImage.src = 'apple-touch-icon.png';
 
 iconImage.onload = function ()
 {
