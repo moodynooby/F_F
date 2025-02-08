@@ -1,9 +1,8 @@
 https://www.neowin.net/news/rss/
 https://www.espncricinfo.com/rss/content/story/feeds/6.xml
-https://www.youtube.com/@Waveform
-https://www.youtube.com/@TLDRnewsGLOBAL
-https://www.youtube.com/@TLDRdaily
-https://www.youtube.com/@TrustMeBroOfficial
+https://rss.art19.com/the-daily-briefing
 https://www.reddit.com/
-https://www.youtube.com/@DougDougVODChannel
-https://www.youtube.com/@RTGameStreamArchive
+https://www.youtube.com/feeds/videos.xml?channel_id=UCzL0SBEypNk4slpzSbxo01g
+https://www.youtube.com/feeds/videos.xml?channel_id=UCyUmevTef0H-pFaspmfTb3Q
+https://feeds.megaphone.fm/STU4418364045
+https://www.youtube.com/feeds/videos.xml?channel_id=UC-uhvujip5deVcEtLxnW8qg
