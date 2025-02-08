@@ -1,88 +1,71 @@
-name: Update UI and Content on Github Pages
+name: Fetch new feeds and push content to Github Pages
 on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
     paths:
-      - 'src/**'  # Monitor changes in source directory
-      - 'config/**'  # Monitor configuration files
-      - 'themes/**'  # Monitor theme files
+      - 'feeds.php'
+      - 'base.html'
   schedule:
     - cron: '0 */24 * * *'  # Runs every 2 hours
-      # Allows you to run this workflow manually from the Actions tab
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# Sets permissions of the GITHUB_TOKEN
 permissions:
-  contents: write
-  pages: write
   id-token: write
+  contents: write
+  actions: write
+  checks: write
+  deployments: write
+  discussions: write
+  issues: write
+  pages: write
+  packages: write
+  pull-requests: write
+  repository-projects: write
+  security-events: write
+  statuses: write
 
 # Allow only one concurrent deployment
 concurrency:
   group: "pages"
-  cancel-in-progress: true  # Changed to true to avoid stale deployments
+  cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4  # Updated to v4
       
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.2'
-          extensions: json, curl
-          
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          
-      - name: Install dependencies
-        run: |
-          npm ci
-          composer install --no-dev --optimize-autoloader
-          
-      - name: Build UI
-        run: |
-          npm run build
-          
-      - name: Generate content
-        run: |
-          php scripts/generate-content.php
-          php scripts/apply-theme.php
-          
       - name: Setup Pages
-        uses: actions/configure-pages@v4
-        
-      - name: Optimize assets
-        run: |
-          npm run optimize
-          
-      - name: Commit and push if changed
+        uses: actions/configure-pages@v4  # Updated to v4
+      
+      - name: Run feeds.php
+        run: php feeds.php
+      
+      - name: Commit files
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add dist/
-          git commit -m "Update UI and content: $(date +%Y-%m-%d)" || echo "No changes to commit"
-          git push origin main || echo "No changes to push"
-          
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+          git add --all
+          git commit -m "Updating the repository" || echo "No changes to commit"
+      
+      - name: Push changes
+        uses: ad-m/github-push-action@master
         with:
-          path: './dist'
-          
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3  # Updated to v3
+        with:
+          path: './public'
+      
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
-        
-      - name: Notify on completion
-        if: always()
-        run: |
-          echo "::notice::Deployment completed with status: ${{ job.status }}"
+        uses: actions/deploy-pages@v4  # Updated to v4
