@@ -1,8 +1,8 @@
 <!DOCTYPE html><html><head>
-    <title>rssTea - RSS Reader Web App Hosted On Github</title>
-    <meta name="description" content="rssTea is a fast, lightweight RSS and podcast Web Viewer that can be hosted On Github Pages."/>
-    <link rel="shortcut icon" href="favicon.ico"> 
-  <link rel="icon" href="favicon.png">
+    <title>Focus Feeds </title>
+    <meta name="description" content=""/>
+    <link rel="shortcut icon" href="/public/icon.svg"> 
+  <link rel="icon" href="/public/icon.svg">
 <link rel="manifest" href="manifest.json" />
  <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="rdx" />
@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="theme.css" type="text/css">
 </head>
 <body>
-<div id="header">rssTea</div>
+<div id="header">Focus Feeds</div>
     <div id="pcwrap">
-<div id="filter"><div class="pclogo">rssTea</div><span id="filters">
-<span class="tab active">All</span>
-<span class="tab">Posts</span>
+<div id="filter"><div class="pclogo">Focus Feeds</div><span id="filters">
+<span class="tab ">All</span>
+<span class="tab">Poactivests</span>
 <span class="tab">Podcasts</span>
 <select name="changechannel"><!-- options here --></select></span></div>
 <div id="wrap">
@@ -24,7 +24,8 @@
 </div>
     </div>
 <div id="floating_player">
-<div class="player_meta"><button id="playpausebutton">Play</button><span id="title">Not Playing</span> <button id="speed">1x</button><button id="plus30">+30s</button></div>
+<div class="player_meta"><button id="playpausebutton">Play</button><span id="title">Not Playing</span>
+     <button id="speed">1x</button><button id="plus30">+30s</button></div>
   <div id="timeline_wrap">
   <ul id="chapters"></ul>
     <span id="current_time"></span>
@@ -127,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function ()
         caudio.currentTime = seekTime;
     });
 
-    const speeds = [1, 1.2, 1.5, 1.75, 2];
+    const speeds = [1, 1.2, 1.5, 1.75, 2, 0.5];
     let currentSpeedIndex = 0;
     document.getElementById('speed').addEventListener('click', () =>
     {
