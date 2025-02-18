@@ -9,3 +9,4 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC-uhvujip5deVcEtLxnW8qg
 https://rss.art19.com/world-leader-leaderboard
 https://feeds.megaphone.fm/LMG3928170156
 https://www.espncricinfo.com/rss/content/story/feeds/0.xml
+https://en.wikinews.org/w/index.php?title=Special:NewsFeed&feed=atom&categories=Published&notcategories=No%20publish%7CArchived%7CAutoArchived%7Cdisputed&namespace=0&count=30&hourcount=124&ordermethod=categoryadd&stablepages=only
