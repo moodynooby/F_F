@@ -1,5 +1,4 @@
 https://www.neowin.net/news/rss/
-https://www.espncricinfo.com/rss/content/story/feeds/6.xml
 https://rss.art19.com/the-daily-briefing
 https://www.reddit.com/
 https://www.youtube.com/feeds/videos.xml?channel_id=UCzL0SBEypNk4slpzSbxo01g
