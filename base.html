@@ -13,6 +13,26 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="theme.css" type="text/css">
+    <meta name="color-scheme" content="light dark">
+    <script>
+        // Set Bootstrap theme based on system preference
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-bs-theme', 'dark');
+        } else {
+            document.documentElement.setAttribute('data-bs-theme', 'light');
+        }
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            document.documentElement.setAttribute('data-bs-theme', event.matches ? 'dark' : 'light');
+        });
+    </script>
+ <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="F_F" />
+    <meta   name="apple-mobile-web-app-status-bar-style" content="default" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="theme.css" type="text/css">
 </head>
 <body>
 <div id="header">Focus Feeds</div>
@@ -22,11 +42,11 @@
 <span class="tab">Posts</span>
 <span class="tab">Podcasts</span>
 <span class="tab"><a href="https://notebooklm.google.com/">AI Podcasts</a></span>
-<select name="changechannel"><!-- options here --></select></span></div>
-<div id="wrap">
-<!-- posts here -->
+<select name="changechannel" class="form-select" ><option value="All">All Channels</option><option value="Cricket news from ESPN Cricinfo.com">Cricket news from ESPN Cricinfo.com</option><option value="Neowin">Neowin</option><option value="India news from ESPN Cricinfo.com">India news from ESPN Cricinfo.com</option><option value="English Wikinews Atom feed.">English Wikinews Atom feed.</option><option value="The Daily Briefing">The Daily Briefing</option><option value="RTGame Stream Archive">RTGame Stream Archive</option><option value="The WAN Show">The WAN Show</option><option value="TLDR News Global">TLDR News Global</option><option value="Waveform: The MKBHD Podcast">Waveform: The MKBHD Podcast</option><option value="World Leader Leaderboard">World Leader Leaderboard</option><option value="DougDougDougDoug">DougDougDougDoug</option></select></span></div>
+    <div id="wrap">
+        Test
+        </div>
 </div>
-    </div>
 <div id="floating_player">
 <div class="player_meta"><button id="playpausebutton"><i class="bi bi-play-circle"></i></button><span id="title">Not Playing</span>
      <button id="speed">1x</button><button id="plus30">+30s</button></div>

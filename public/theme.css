@@ -26,7 +26,7 @@ body {
 }
 @media (prefers-color-scheme: dark) {
 :root {
-    --white: #23262b;
+    --white: #212529;
     --orange: #fc7e11;
     --darkgrey: #ddd;
     --grey: #4f5257;
