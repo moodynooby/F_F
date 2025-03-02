@@ -12,8 +12,11 @@
 }
 
 .post {
-    border-bottom: 1px dotted #ddd;
-    border-bottom: 1px dotted var(--grey);
+    border: 1px dotted var(--grey);
+    border-radius: 10px;
+    margin: 10px;
+    z-index: 100;
+    padding: 1%;
 }
 
 
@@ -27,7 +30,7 @@ body {
 @media (prefers-color-scheme: dark) {
 :root {
     --white: #212529;
-    --orange: #fc7e11;
+    --orange: #CB2023;
     --darkgrey: #ddd;
     --grey: #4f5257;
     --black: #ffffff;
@@ -168,11 +171,12 @@ span.tab {
     padding: 5px 8px;
     color: #2f2f2f;
     color:var(--darkgrey);
-    border-radius: 5px;
+    border-radius: 10px;
     display: inline-block;
     background: #e9f2fb;
     background:var(--lightgrey);
     font-size: 16px;
+    margin: 2px;
 }
 
 span.tab.active {
@@ -181,7 +185,7 @@ span.tab.active {
         padding: 5px 8px;
     background: white;
     background:var(--white);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 select.selected {
     background: white;
@@ -432,6 +436,8 @@ span.tab {
     cursor: pointer;
       background: transparent;
   padding:10px;
+  border-radius: 10px;
+
 }
 
 div#wrap {
@@ -458,8 +464,9 @@ div#header {
 }
   span.tab.active {
     background: var(--lightgrey);
-      border-radius: 0px;
+    border-radius: 10px;
       padding:10px;
+
 }
 
 select {
@@ -483,4 +490,15 @@ select.selected {
 span.tab:hover,select:hover {
     background: var(--lightgrey);
 }
+}
+.aiP {
+    padding: 5px 8px;
+    color: #2f2f2f;
+    color:var(--darkgrey);
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px;
+    margin-bottom: 10px;
+
 }
