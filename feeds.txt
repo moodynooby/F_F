@@ -2,3 +2,10 @@ https://www.neowin.net/news/rss/
 https://rss.art19.com/the-daily-briefing
 https://feeds.megaphone.fm/STU4418364045
 https://rss.art19.com/world-leader-leaderboard
+https://www.espncricinfo.com/rss/content/story/feeds/0.xml
+https://www.gujaratsamachar.com/rss/top-stories
+https://www.thehindu.com/feeder/default.rss
+https://economictimes.indiatimes.com/rssfeedsdefault.cms
+https://www.wisden.com/feed
+https://9to5google.com/feed/
+https://blog.nightly.mozilla.org/feed/
