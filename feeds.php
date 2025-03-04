@@ -1,6 +1,6 @@
 <?php
 $urls = file('feeds.txt', FILE_IGNORE_NEW_LINES);
-$postLimit = 5;
+$postLimit = 7;
 $result = '';
 $feeda = array();
 $feedn = 0;
