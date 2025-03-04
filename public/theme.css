@@ -1,7 +1,7 @@
 :root
 {
   --white: #ffffff;
-   --orange: #fc7e11;
+   --orange: #CB2023;
     --darkgrey: #666666;
       --grey: #dddddd;
      --black: #000000;
@@ -418,6 +418,7 @@ div#pcwrap {
     max-width: 1024px;
     margin: 0 auto;
     align-self: flex-start;
+
 }
   div#filter {
  left: 0;
@@ -458,9 +459,11 @@ div#header {
 }
 
 .pclogo {
-    padding: 20px 0px 0px 0px;
+    padding: 1px;
+    margin: 20px;
     display: block;
     font-size: 1.2em;
+    border-radius: 5px;
 }
   span.tab.active {
     background: var(--lightgrey);
