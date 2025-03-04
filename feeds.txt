@@ -9,3 +9,4 @@ https://economictimes.indiatimes.com/rssfeedsdefault.cms
 https://www.wisden.com/feed
 https://9to5google.com/feed/
 https://blog.nightly.mozilla.org/feed/
+https://xkcd.com/rss.xml
