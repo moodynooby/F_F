@@ -4,6 +4,7 @@ $postLimit = 7;
 $result = '';
 $feeda = array();
 $feedn = 0;
+$sevenDaysAgo = strtotime('-7 days');
 foreach ($urls as $url) {
 echo "\n"."Getting feed from: ". $url." \n";
     $ch = curl_init();
@@ -33,9 +34,11 @@ echo "\n"."Getting feed from: ". $url." \n";
         $feedType = strtolower($feed->getName());
         $count = 0;
         if ($feedType === 'rss') {
+            // In both RSS and Atom feed sections, replace the count check with:
             foreach ($feed->channel->item as $item) {
-                if ($count >= $postLimit) {
-                    break;
+                $pubDate = strtotime((string) $item->pubDate);
+                if ($pubDate < $sevenDaysAgo) {
+                    continue;
                 }
                 $description = $item->description;
                 $image = null;

@@ -26,7 +26,42 @@
             document.documentElement.setAttribute('data-bs-theme', event.matches ? 'dark' : 'light');
         });
     </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const posts = document.querySelectorAll('.post');
+    const loadMore = document.getElementById('loadMore');
+    const sevenDaysAgo = Date.now() - (7 * 24 * 60 * 60 * 1000);
+    
+    // Initially hide posts older than limit
+    let visibleCount = 0;
+    posts.forEach(post => {
+        if (visibleCount < 7) {
+            post.style.display = 'flex';
+        } else {
+            post.style.display = 'none';
+        }
+        const timestamp = parseInt(post.dataset.ts) * 1000;
+        if (timestamp >= sevenDaysAgo) {
+            visibleCount++;
+        }
+    });
 
+    // Show load more button if there are more posts
+    if (visibleCount > 7) {
+        loadMore.style.display = 'block';
+    }
+
+    loadMore.addEventListener('click', function() {
+        posts.forEach(post => {
+            const timestamp = parseInt(post.dataset.ts) * 1000;
+            if (timestamp >= sevenDaysAgo) {
+                post.style.display = 'flex';
+            }
+        });
+        loadMore.style.display = 'none';
+    });
+});
+</script>
 </head>
 <body>
 <div id="header">Focus Feeds</div>
@@ -36,6 +71,8 @@
 <span class="tab">Posts</span>
 <span class="tab">Podcasts</span>
 <a href="https://notebooklm.google.com/" class="aiP">AI Podcasts</a>
+<button id="loadMore" style="display: none; " class="btn btn-primary">Load Last 7 Days</button>
+\
 <select name="changechannel" class="form-select" ><!-- options here --></select></span></div>
 <div id="wrap">
 <!-- posts here -->
