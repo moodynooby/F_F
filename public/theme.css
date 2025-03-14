@@ -548,7 +548,7 @@ span.tab:hover,select:hover {
 
         /* Button styling */
         .toggle-btn {
-            position: fixed;
+            position: relative;
             top: 20px;
             left: 20px;
             background: #007bff;
