@@ -4,12 +4,12 @@
     <meta name="description" content="Focus Feeds : Now Focus While Feeding"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@400;700&display=swap" rel="stylesheet">    
     <link rel="shortcut icon" href="favicon.svg"> 
   <link rel="icon" href="favicon.svg">
   <link rel="manifest" href="manifest.json" />
+ <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="F_F" />
+    <meta   name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="theme.css" type="text/css">
@@ -61,29 +61,19 @@ document.addEventListener('DOMContentLoaded', function() {
         loadMore.style.display = 'none';
     });
 });
-function toggleSidebar() {
-            document.getElementById("sidebar").classList.toggle("active");
-        }
-
 </script>
-
 </head>
 <body>
 <div id="header">Focus Feeds</div>
-<button class="toggle-btn btn btn-ghost" onclick="toggleSidebar()">☰</button>
-<div class="sidebar" id="sidebar">
-    <button class="toggle-btn btn btn-ghost" onclick="toggleSidebar()">☰</button>
     <div id="pcwrap">
 <div id="filter"><div class="pclogo">Focus Feeds</div><span id="filters">
 <span class="tab ">All</span>
 <span class="tab">Posts</span>
 <span class="tab">Podcasts</span>
 <a href="https://notebooklm.google.com/" class="aiP">AI Podcasts</a>
+<select name="changechannel" class="form-select" ><option value="All">All Channels</option><option value="Neowin">Neowin</option><option value="9to5Google">9to5Google</option><option value="Top Stories News - Gujarat Samachar : World's Leading Gujarati Newspaper">Top Stories News - Gujarat Samachar : World's Leading Gujarati Newspaper</option><option value="Economic Times">Economic Times</option><option value="The Daily Briefing">The Daily Briefing</option><option value="Waveform: The MKBHD Podcast">Waveform: The MKBHD Podcast</option><option value="xkcd.com">xkcd.com</option><option value="World Leader Leaderboard">World Leader Leaderboard</option></select></span></div>
 <button id="loadMore" style="display: none;" class="btn btn-secondary settings">Load Last 7 Days</button>
-<select name="changechannel" class="form-select" ><option value="All">All Channels</option><option value="Neowin">Neowin</option><option value="9to5Google">9to5Google</option><option value="Top Stories News - Gujarat Samachar : World's Leading Gujarati Newspaper">Top Stories News - Gujarat Samachar : World's Leading Gujarati Newspaper</option><option value="Economic Times">Economic Times</option><option value="The Daily Briefing">The Daily Briefing</option><option value="Waveform: The MKBHD Podcast">Waveform: The MKBHD Podcast</option><option value="xkcd.com">xkcd.com</option><option value="World Leader Leaderboard">World Leader Leaderboard</option></select></span>
-</div>
-</div>
-</div>  
+
 <div id="wrap">
 <div class="post" data-channel="Neowin" data-ts="1743275281" data-audio="0"><div class="leftpan"><img src="https://cdn.neowin.com/news/images/uploaded/2021/03/1615533403_screenshot_(91)_story.jpg" alt="AMD reportedly preparing Zen 5-based Ryzen 9000G APUs for Q4 2025"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">Neowin</span> &bull; <span class="date">Mar 29, 2025</span></div>
 <h2><a href="https://www.neowin.net/news/amd-reportedly-preparing-zen-5-based-ryzen-9000g-apus-for-q4-2025/" target="_blank">AMD reportedly preparing Zen 5-based Ryzen 9000G APUs for Q4 2025</a></h2>
@@ -91,11 +81,11 @@ function toggleSidebar() {
 <div class="post" data-channel="9to5Google" data-ts="1743274980" data-audio="0"><div class="leftpan"><img src="https://9to5google.com/wp-content/uploads/sites/4/2023/12/google-messages-name-cover.png?w=1600" alt="What Google Messages features are rolling out [March 2025]"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">9to5Google</span> &bull; <span class="date">Mar 29, 2025</span></div>
 <h2><a href="https://9to5google.com/2025/03/29/google-messages-features/" target="_blank">What Google Messages features are rolling out [March 2025]</a></h2>
 </div></div>
-<div class="post" data-channel="Top Stories News - Gujarat Samachar : World's Leading Gujarati Newspaper" data-ts="1743266743" data-audio="0"><div class="leftpan"><img src="https://static.gujaratsamachar.com/content_image/content_image_4252bc1c-569e-4c2f-8b4c-897971dd433e.jpeg" alt="સાઉદી અરેબિયામાં દેખાયો ઈદનો ચાંદ, ભારતમાં 31 માર્ચે ઉજવાશે ઈદ-ઉલ-ફિત્ર"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">Top Stories News - Gujarat Samachar : World's Leading Gujarati Newspaper</span> &bull; <span class="date">Mar 29, 2025</span></div>
-<h2><a href="https://www.gujaratsamachar.com/news/international/eid-moon-sighted-in-saudi-arabia-eid-ul-fitr-to-be-celebrated-in-india-on-march-31" target="_blank">સાઉદી અરેબિયામાં દેખાયો ઈદનો ચાંદ, ભારતમાં 31 માર્ચે ઉજવાશે ઈદ-ઉલ-ફિત્ર</a></h2>
-</div></div>
 <div class="post" data-channel="Neowin" data-ts="1743264601" data-audio="0"><div class="leftpan"><img src="https://cdn.neowin.com/news/images/uploaded/2024/02/1708599143_bsod_story.jpg" alt="Windows 11 gets Quick Recovery to fix computers that cannot boot"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">Neowin</span> &bull; <span class="date">Mar 29, 2025</span></div>
 <h2><a href="https://www.neowin.net/news/windows-11-gets-quick-recovery-to-fix-computers-that-cannot-boot/" target="_blank">Windows 11 gets Quick Recovery to fix computers that cannot boot</a></h2>
+</div></div>
+<div class="post" data-channel="Top Stories News - Gujarat Samachar : World's Leading Gujarati Newspaper" data-ts="1743264415" data-audio="0"><div class="leftpan"><img src="https://static.gujaratsamachar.com/content_image/content_image_0a87044b-45c3-42b8-97bd-01dcdc6567b1.jpeg" alt="IPL 2025: ગુજરાત ટાઈટન્સે 36 રને મુંબઈને હરાવ્યું, સાઈ સુદર્શનની વિસ્ફોટક બેટિંગ"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">Top Stories News - Gujarat Samachar : World's Leading Gujarati Newspaper</span> &bull; <span class="date">Mar 29, 2025</span></div>
+<h2><a href="https://www.gujaratsamachar.com/news/sports/gt-vs-mi-gujarat-titans-vs-mumbai-indians-match-ipl-2025" target="_blank">IPL 2025: ગુજરાત ટાઈટન્સે 36 રને મુંબઈને હરાવ્યું, સાઈ સુદર્શનની વિસ્ફોટક બેટિંગ</a></h2>
 </div></div>
 <div class="post" data-channel="Top Stories News - Gujarat Samachar : World's Leading Gujarati Newspaper" data-ts="1743263248" data-audio="0"><div class="leftpan"><img src="https://static.gujaratsamachar.com/content_image/content_image_a57be748-bdb7-4744-ab0b-280395aae429.jpeg" alt="મુખ્યમંત્રી યોગી કડક આદેશ: ધાર્મિક સ્થળોના 500 મીટર વિસ્તારમાં નોનવેજ પર પ્રતિબંધ"/ ></div><div class="rightpan"><div class="feedname"><span class="channel">Top Stories News - Gujarat Samachar : World's Leading Gujarati Newspaper</span> &bull; <span class="date">Mar 29, 2025</span></div>
 <h2><a href="https://www.gujaratsamachar.com/news/national/chief-minister-yogi-issues-strict-order-non-veg-banned-within-500-meters-of-religious-places" target="_blank">મુખ્યમંત્રી યોગી કડક આદેશ: ધાર્મિક સ્થળોના 500 મીટર વિસ્તારમાં નોનવેજ પર પ્રતિબંધ</a></h2>
@@ -775,6 +765,24 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 
 }
 
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+const iconImage = new Image();
+iconImage.src = 'apple-touch-icon.png';
+
+iconImage.onload = function ()
+{
+    const x = (canvas.width - iconImage.width) / 2;
+    const y = (canvas.height - iconImage.height) / 2;
+
+    ctx.drawImage(iconImage, x, y);
+
+    const imageDataURL = canvas.toDataURL('image/png');
+
+    const appleTouchStartupImageLink = document.createElement('link');
+    appleTouchStartupImageLink.setAttribute('rel', 'apple-touch-startup-image');
+    appleTouchStartupImageLink.setAttribute('href', imageDataURL);
+    document.head.appendChild(appleTouchStartupImageLink);
+};
         
 </script>
 </body>
