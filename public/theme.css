@@ -14,12 +14,9 @@
 .post {
     border: 1px dotted var(--grey);
     border-radius: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 2%;
+    margin: 10px;
     z-index: 100;
-    padding: 10px;
-    
+    padding: 1%;
 }
 
 
@@ -414,8 +411,7 @@ h2 {
     line-height: 30px;
 }
 }
-.pclogo {display:none;
-    font-family: "Zilla Slab Highlight", serif;}
+.pclogo {display:none;}
 @media (min-width:  720px) {
 div#pcwrap {
     display: flex;
@@ -468,7 +464,6 @@ div#header {
     display: block;
     font-size: 1.2em;
     border-radius: 5px;
-    font-family: "Zilla Slab Highlight", serif;
 }
   span.tab.active {
     background: var(--lightgrey);
@@ -525,35 +520,3 @@ span.tab:hover,select:hover {
     margin-right:10px;
 
 }
-
-        /* Sidebar styling */
-        .sidebar {
-            width: 250px;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: -250px; /* Initially hidden */
-            background: #333;
-            color: white;
-            padding: 20px;
-            transition: 0.3s;
-            box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-        }
-
-        /* Show sidebar */
-        .sidebar.active {
-            left: 0;
-        }
-
-        /* Button styling */
-        .toggle-btn {
-            position: relative;
-            top: 20px;
-            left: 20px;
-            background: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-        }
