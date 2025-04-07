@@ -158,11 +158,13 @@ span.date {padding-left: 5px;}
 
 
 span#filters {
+    border:3px solid var(--lightgrey);
     padding: 5px 0px;
     border-radius: 5px;
     vertical-align: middle;
     background: #e9f2fb;
     background:var(--lightgrey);
+    margin-bottom: 10px;
 }
 
 span.tab {
@@ -492,17 +494,6 @@ span.tab:hover,select:hover {
     background: var(--lightgrey);
 }
 }
-.aiP {
-    padding: 5px 8px;
-    color: #2f2f2f;
-    color:var(--darkgrey);
-    border-radius: 5px;
-    display: inline-block;
-    font-size: 16px;
-    margin: 8px;
-    margin-bottom: 10px;
-
-}
 
 .settings {
     padding: 5px 8px;
@@ -517,4 +508,8 @@ span.tab:hover,select:hover {
     margin-left:30px;
     margin-right:10px;
 
+}
+
+.form-select {
+    margin-top: 5px;
 }
